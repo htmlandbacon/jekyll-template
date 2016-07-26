@@ -1,0 +1,9 @@
+<ul class="list-bullet">
+  {% for p in site.pages %}
+    {% if p.title %}
+      <li>
+        <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a> <span class="font-xsmall">({{ p.label }})</span>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

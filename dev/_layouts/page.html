@@ -1,0 +1,21 @@
+---
+layout: govuk_template
+---
+
+<main id="content" role="main" class="text">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {% if page.backlink %}
+         <nav class="back-nav" role="navigation">
+           <a href="/" id="backButton" class="link-back">back</a>
+        </nav>
+      {% endif %}
+      <header>
+        <h1 class="heading-xlarge">{{ page.title }}</h1>
+      </header>
+
+      {{ content }}
+
+    </div>
+  </div>
+</main>

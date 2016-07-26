@@ -1,0 +1,54 @@
+// GOV.UK front end toolkit
+// Sass variables, mixins and functions
+// https://github.com/alphagov/govuk_frontend_toolkit/tree/master/stylesheets
+
+// Settings (variables)
+@import 'govuk_frontend_toolkit/stylesheets/colours';                                // Colour variables
+@import 'govuk_frontend_toolkit/stylesheets/font_stack';                             // Font family variables
+@import 'govuk_frontend_toolkit/stylesheets/measurements';                           // Widths and gutter variables
+
+// Mixins
+@import 'govuk_frontend_toolkit/stylesheets/conditionals';                           // Media query mixin
+@import 'govuk_frontend_toolkit/stylesheets/device-pixels';                          // Retina image mixin
+@import 'govuk_frontend_toolkit/stylesheets/grid_layout';                            // Basic grid layout mixin
+@import 'govuk_frontend_toolkit/stylesheets/typography';                             // Core bold and heading mixins, also external links
+@import 'govuk_frontend_toolkit/stylesheets/shims';                                  // Inline block mixin, clearfix placeholder
+
+// Mixins to generate components (chunks of UI)
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta';
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/buttons';
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/breadcrumbs';
+
+// Functions
+@import 'govuk_frontend_toolkit/stylesheets/url-helpers';
+
+// GOV.UK elements
+@import 'govuk-elements-sass/public/sass/elements/helpers';                       // Helper functions and classes
+
+// Generic (normalize/reset.css)
+@import 'govuk-elements-sass/public/sass/elements/reset';
+
+// Base (unclassed HTML elements)
+// These are predefined by govuk_template
+// If you're not using govuk_template, uncomment the line below.
+// @import 'govuk-elements-sass/public/sass/elements/govuk-template-base';        // Base styles set by GOV.UK template
+
+// Objects (unstyled design patterns)
+@import 'govuk-elements-sass/public/sass/elements/layout';                        // Main content container. Grid layout - rows and column widths
+
+// Components (chunks of UI)
+@import 'govuk-elements-sass/public/sass/elements/elements-typography';           // Typography
+@import 'govuk-elements-sass/public/sass/elements/buttons';                       // Buttons
+@import 'govuk-elements-sass/public/sass/elements/icons';                         // Icons - numbered steps, calendar, search
+@import 'govuk-elements-sass/public/sass/elements/lists';                         // Lists - numbered, bulleted
+@import 'govuk-elements-sass/public/sass/elements/tables';                        // Tables - regular, numeric
+@import 'govuk-elements-sass/public/sass/elements/details';                       // Details summary
+@import 'govuk-elements-sass/public/sass/elements/panels';                        // Panels with a left grey border
+@import 'govuk-elements-sass/public/sass/elements/forms';                         // Form - wrappers, inputs, labels
+@import 'govuk-elements-sass/public/sass/elements/forms/form-block-labels';       // Chunky labels for radios and checkboxes
+@import 'govuk-elements-sass/public/sass/elements/forms/form-date';               // Date of birth pattern
+@import 'govuk-elements-sass/public/sass/elements/forms/form-validation';         // Errors and validation
+@import 'govuk-elements-sass/public/sass/elements/breadcrumbs';                   // Breadcrumbs
+@import 'govuk-elements-sass/public/sass/elements/phase-banner';                  // Alpha and beta banners and tags
+@import 'govuk-elements-sass/public/sass/elements/components';                    // GOV.UK prefixed styles - blue highlighted box
+@import 'govuk-elements-sass/public/sass/elements/shame';                         // Hacks and workarounds that will go away eventually

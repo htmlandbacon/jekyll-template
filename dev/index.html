@@ -1,0 +1,26 @@
+---
+layout: govuk_template
+header_class: with-proposition
+---
+
+<main id="content" role="main" class="text">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <header>
+        <h1 class="heading-xlarge">Test Jekyll Site</h1>
+      </header>
+      <p>Example Pages</p>
+
+      <ul class="list-bullet">
+        {% for p in site.pages %}
+          {% if p.title %}
+            <li>
+              <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a> <span class="font-xsmall">({{ p.label }})</span>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</main>
