@@ -6,9 +6,13 @@ To run the site you will need npm installed, this will get various modules for g
 
 ```
 npm install
-grunt
 ```
 
+To run the project, type:
+
+```
+gulp
+```
 
 A few notes:
 
